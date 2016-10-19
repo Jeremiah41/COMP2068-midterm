@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UFT-8">
+    <title><%= title%></title>
+    <link type="text/css" rel="stylesheet"href="/stylesheets/bootstrap.min.css" />
+
+    <link type="text/css" rel="stylesheet"href="/stylesheets/bootstrap-theme.min.css" />
+</head>
+<body>
+    <h1>Movies</h1>
+    <table class="table table-style"></table>
+    <tr>
+        <th>Title</th>
+        <th>Studio</th>
+        <th>Year</th>
+    </tr>
+    <% for (var i = 0; i < movies.length; i++) { %>
+    <tr>
+        <td><%= movies[i].title %></td>
+        <td><%= movies[i].studio %></td>
+        <td><%= movies[i].year %></td>
+        <% } %>
+    </tr>
+
+    </table>
+
+
+</body>
+</html>
